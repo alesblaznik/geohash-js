@@ -38,7 +38,7 @@ function calculateAdjacent(srcHash, dir) {
 	var type = (srcHash.length % 2) ? 'odd' : 'even';
 	var base = srcHash.substring(0,srcHash.length-1);
 	if (BORDERS[dir][type].indexOf(lastChr)!=-1)
-		base = calculateAdjacent(base, dir);
+		base = this.calculateAdjacent(base, dir);
 	return base + BASE32[NEIGHBORS[dir][type].indexOf(lastChr)];
 }
 
