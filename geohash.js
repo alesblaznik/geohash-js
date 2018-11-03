@@ -77,7 +77,7 @@ export function encodeGeoHash(latitude, longitude) {
 	var bit=0;
 	var ch=0;
 	var precision = 12;
-	geohash = "";
+	var geohash = "";
 
 	lat[0] = -90.0;  lat[1] = 90.0;
 	lon[0] = -180.0; lon[1] = 180.0;
