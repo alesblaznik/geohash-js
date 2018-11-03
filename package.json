@@ -1,0 +1,19 @@
+{
+  "name": "geohash",
+  "version": "1.0.0",
+  "description": "Geohash Javascript Demonstration (c) 2008 David Troy Released under the MIT License",
+  "main": "geohash-demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alesblaznik/geohash-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alesblaznik/geohash-js/issues"
+  },
+  "homepage": "https://github.com/alesblaznik/geohash-js#readme"
+}
