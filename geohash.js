@@ -32,7 +32,7 @@ function refine_interval(interval, cd, mask) {
 		interval[1] = (interval[0] + interval[1])/2;
 }
 
-function calculateAdjacent(srcHash, dir) {
+export function calculateAdjacent(srcHash, dir) {
 	srcHash = srcHash.toLowerCase();
 	var lastChr = srcHash.charAt(srcHash.length-1);
 	var type = (srcHash.length % 2) ? 'odd' : 'even';
@@ -42,7 +42,7 @@ function calculateAdjacent(srcHash, dir) {
 	return base + BASE32[NEIGHBORS[dir][type].indexOf(lastChr)];
 }
 
-function decodeGeoHash(geohash) {
+export function decodeGeoHash(geohash) {
 	var is_even = 1;
 	var lat = []; var lon = [];
 	lat[0] = -90.0;  lat[1] = 90.0;
@@ -70,7 +70,7 @@ function decodeGeoHash(geohash) {
 	return { latitude: lat, longitude: lon};
 }
 
-function encodeGeoHash(latitude, longitude) {
+export function encodeGeoHash(latitude, longitude) {
 	var is_even=1;
 	var i=0;
 	var lat = []; var lon = [];
